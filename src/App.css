@@ -1,0 +1,37 @@
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.fdc {
+    flex-direction: column;
+}
+
+.feedback {
+    border: 1px #ea80fc dotted;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.fg1 {
+    flex-grow: 1;
+}
+
+.full-image {
+    width: 100%;
+    height: 100%;
+}
+
+.rate-button.active {
+    /* important because of important in library :((((((( */
+    background-color: #e040fb !important;
+}
