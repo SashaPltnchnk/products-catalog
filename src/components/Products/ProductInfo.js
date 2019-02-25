@@ -11,7 +11,7 @@ class ProductInfo extends Component {
                 <div className="col s12 right">
                     <div className="card center">
                         <div className="card-image col m6">
-                            <img className="full-image" src={`http://smktesting.herokuapp.com/static/img${params.id}.png`} alt={params.title}/>                    
+                            <img className="full-image" src={`https://smktesting.herokuapp.com/static/img${params.id}.png`} alt={params.title}/>                    
                         </div>
                         <div className="card-content">
                             <h3>{params.title}</h3>

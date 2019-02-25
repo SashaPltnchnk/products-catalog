@@ -14,7 +14,7 @@ class Auth extends Component {
 
      handleClick = () => {
         const { username, password } = this.state
-        axios.post(`http://smktesting.herokuapp.com/api/${this.props.authPath}/`, { username, password })
+        axios.post(`httpss://smktesting.herokuapp.com/api/${this.props.authPath}/`, { username, password })
         .then( (res) => {
             if(res.data.success) {
                 localStorage.setItem('token', res.data.token)

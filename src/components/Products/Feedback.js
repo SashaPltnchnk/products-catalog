@@ -8,7 +8,7 @@ class Feedback extends Component {
     }
 
     getComments = () => {
-        axios.get(`http://smktesting.herokuapp.com/api/reviews/${this.props.id}`)
+        axios.get(`https://smktesting.herokuapp.com/api/reviews/${this.props.id}`)
         .then(res => {
             this.setState({ feedback: res.data })
         })

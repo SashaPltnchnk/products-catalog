@@ -10,7 +10,7 @@ class LeaveFeedback extends Component {
 
     leaveComment = () => {
       axios.defaults.headers.common = { Authorization: `Token ${localStorage.getItem('token')}`}    
-      axios.post(`http://smktesting.herokuapp.com/api/reviews/${this.props.id}`, this.state)
+      axios.post(`https://smktesting.herokuapp.com/api/reviews/${this.props.id}`, this.state)
         .then(res => {
             console.log(`Success, ${res}`)
             this.props.getComments()

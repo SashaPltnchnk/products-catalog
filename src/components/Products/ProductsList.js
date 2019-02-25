@@ -9,7 +9,7 @@ class ProductsList extends Component {
     }
 
     showCatalog = () => {
-        axios.get(`http://smktesting.herokuapp.com/api/products/`)
+        axios.get(`https://smktesting.herokuapp.com/api/products/`)
         .then( (res) => {
            this.setState({data: res.data}) })
         .catch(res => console.log(`Something went wrong${res}`))
